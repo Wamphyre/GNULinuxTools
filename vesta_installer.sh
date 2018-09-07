@@ -44,4 +44,4 @@ sleep 1
 
 chmod a+x vst-install.sh 
 
-./vst-install.sh --nginx yes --phpfpm yes --apache no --named no --remi yes --vsftpd no --proftpd yes --iptables yes --fail2ban yes --quota yes --exim no --dovecot no --spamassassin no --clamav no --softaculous no --mysql yes --postgresql no --hostname "$HOSTNAME" --email "$EMAIL" --password "$PASSWORD"
+./vst-install.sh --nginx yes --apache yes --phpfpm no --named yes --remi yes --vsftpd yes --proftpd no --iptables yes --fail2ban yes --quota yes --exim yes --dovecot yes --spamassassin yes --clamav yes --softaculous no --mysql yes --postgresql no --hostname "$HOSTNAME" --email "$EMAIL" --password "$PASSWORD"
