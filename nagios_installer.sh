@@ -1,5 +1,15 @@
 #!/bin/bash
 
+echo "----- NAGIOS INSTALLER for VestaCP -----"
+
+echo ""
+
+echo "================== By Wamphyre"
+
+echo ""
+
+sleep 2
+
 useradd nagios
 
 groupadd nagcmd
