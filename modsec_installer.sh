@@ -26,12 +26,16 @@ cd /usr/share/modsecurity-crs
 
 mv crs-setup.conf.example crs-setup.conf
 
-echo "<IfModule security2_module> 
+rm -rf /etc/apache2/mods-enabled/security2.conf
+
+touch /etc/apache2/mods-enabled/security2.conf
+
+echo '<IfModule security2_module> 
      SecDataDir /var/cache/modsecurity 
      IncludeOptional /etc/modsecurity/*.conf 
      IncludeOptional "/usr/share/modsecurity-crs/*.conf 
      IncludeOptional "/usr/share/modsecurity-crs/rules/*.conf 
- </IfModule>" >> /etc/apache2/mods-enabled/security2.conf
+ </IfModule>' >> /etc/apache2/mods-enabled/security2.conf
 
 systemctl restart apache2
 
